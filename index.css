@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgb(255, 248, 239);
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+    /* position: sticky; */
+}
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    margin:5px 5px;
+    height:100px;
+    border-radius: 60px;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar::before{
+    content:"";
+    background-color:antiquewhite;  
+    position: absolute;  
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.9;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.7rem;
+}
+#navbar ul li a{
+    font-weight: bold;
+    color:rgb(130, 8, 251);
+    display: block;
+    padding:15px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:white;
+    background-color: black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 50px;
+    justify-content: center;
+    align-items: center;
+    height:560px;
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background: url('img/book-nature.jpg') no-repeat center center/cover;
+    height:100%;
+    top: 0px;
+    left:0px;
+    width:100%;
+    z-index: -1;
+}
+#services{
+    margin:30px;
+    display: flex;
+}
+#services .box{
+    border: 3px solid rgb(136, 46, 240);
+    padding:30px;
+    margin:5px 5px;
+    border-radius: 30px;
+    background-color: rgb(221, 244, 244);
+}
+#services .box img{
+    height:150px;
+    margin:auto;
+    display: block;
+}
+#client{
+    position: relative;
+    height:500px;
+}
+#client::before{
+    content:"";
+    position: absolute;
+    background: url('img/logo4.jpeg');
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ci{
+    padding:30px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('img/contact.jpeg');
+}
+#cb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#cb input,#cb textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border:3px solid black;
+}
+#cb label{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: aliceblue;
+}
+.hp{
+    font-size: 3rem;
+    padding:10px;
+}
+.hs{
+    font-size: 2rem;
+    padding:10px;
+}
+#home h1{
+    color:rgb(231, 134, 255) ;
+    text-align: center;
+}
+#home p{
+    color:aqua ;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.btn{
+    padding:5px 10px;
+    border:3px solid black;
+    background-color: chocolate;
+    margin:20px;
+    color: aliceblue;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.c{
+text-align: center;
+}
+.right{
+    position: absolute;
+    display: inline-block;
+    /* border: 2px solid rgb(215, 128, 255); */
+    right:30px;
+    top:37px;
+}
+.right input{
+    border-radius: 30px;
+    margin:0px 0px;
+    padding:10px 10px;
+    font-size: 15px;
+    border:5px solid black;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    background-color:blanchedalmond;
+    color:grey;
+}
